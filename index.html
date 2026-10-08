@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Music & Culture Flashcards</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🤠 Country Legends & Culture 🎸</h1>
+        <p>Clique no cartão para revelar a resposta</p>
+    </header>
+
+    <!-- Estrutura do Flashcard -->
+    <div class="card-container" onclick="flipCard()">
+        <div class="card" id="flashcard">
+
+            <!-- Frente -->
+            <div class="card-face card-front">
+                <span class="category" id="card-category">Categoria</span>
+                <h2 id="card-question">Pergunta do Card</h2>
+                <p class="hint">💡 Toque para ver a resposta</p>
+            </div>
+
+            <!-- Verso -->
+            <div class="card-face card-back">
+                <p id="card-answer">Resposta do Card.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Navegação -->
+    <div class="controls">
+        <button onclick="prevCard(event)">◄ Voltar</button>
+
+        <span class="progress" id="card-progress">
+            1 / 5
+        </span>
+
+        <button onclick="nextCard(event)">Avançar ►</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
